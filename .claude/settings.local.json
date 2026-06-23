@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/stats/count\")",
+      "Bash(curl -s \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/latest\")",
+      "Bash(curl -s \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/stats/top10\")",
+      "Bash(curl -sL \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/stats/count\" -w \"\\\\nHTTP:%{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/latest\" -w \"\\\\nHTTP:%{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/stats/top10\" -w \"\\\\nHTTP:%{http_code}\\\\n\")",
+      "Bash(curl -sL \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/list/_index\")",
+      "Bash(curl -sL \"https://cdn.statically.io/gh/komed3/rtb-api/main/api/list/rtb/latest\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP:%{http_code} size:%{size_download} time:%{time_total}\\\\n\" \"https://cdn.statically.io/gh/komed3/rtb-api@v1/api/stats/count\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP:%{http_code} size:%{size_download} time:%{time_total}\\\\n\" \"https://cdn.statically.io/gh/komed3/rtb-api@v1/api/list/rtb/latest\")"
+    ]
+  }
+}
